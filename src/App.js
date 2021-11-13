@@ -19,6 +19,7 @@ import ParcheseModal from './Pages/Product/ParcheseModal';
 import Dashboard from './Pages/DashBoard/DashBoard/Dashboard';
 import AddProduct from './Pages/DashBoard/AddProduct/AddProduct';
 import SeeReview from './Pages/Review/SeeReview';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home />
+            </Route>
+            <Route exact path="/about">
+              <About></About>
             </Route>
             <PrivateRoute path="/explore">
               <Explores></Explores>
@@ -48,7 +52,6 @@ function App() {
             <PrivateRoute path="/parchase/:id">
               <ParcheseModal />
             </PrivateRoute>
-
             <Route path="/login">
               <Login></Login>
             </Route>
