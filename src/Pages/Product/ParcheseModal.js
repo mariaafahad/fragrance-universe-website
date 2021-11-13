@@ -37,7 +37,7 @@ const ParcheseModal = () => {
 
 
         // send to the server
-        fetch('http://localhost:5000/parchase', {
+        fetch('https://sleepy-reaches-16284.herokuapp.com/parchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

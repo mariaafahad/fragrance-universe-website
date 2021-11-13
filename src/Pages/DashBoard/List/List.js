@@ -7,7 +7,7 @@ const List = () => {
     const [lists, setLists] = useState([])
 
     useEffect(() => {
-        const url = `http://localhost:5000/parchase?email=${user.email}`
+        const url = `https://sleepy-reaches-16284.herokuapp.com/parchase?email=${user.email}`
         fetch(url)
             .then(res => res.json())
 

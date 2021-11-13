@@ -16,7 +16,7 @@ const ReviewPage = () => {
             ...review,
         }
         // send to the server
-        fetch('http://localhost:5000/review', {
+        fetch('https://sleepy-reaches-16284.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

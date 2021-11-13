@@ -6,14 +6,14 @@ const SeeReview = () => {
     const [newDel, setNewDel] = useState('')
     const { user } = useAuth();
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://sleepy-reaches-16284.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setData(data))
     }, [newDel])
 
     console.log(newDel);
     const deleteReview = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`, { method: 'DELETE' })
+        fetch(`https://sleepy-reaches-16284.herokuapp.com/delete/${id}`, { method: 'DELETE' })
             .then(() =>
                 setNewDel({ id }))
             .then(alert('Deleted Successfully'))
