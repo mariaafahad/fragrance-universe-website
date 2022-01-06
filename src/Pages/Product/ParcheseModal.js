@@ -13,8 +13,10 @@ const ParcheseModal = () => {
     const selectedProduct = products.filter(product => product._id === id);
     console.log(selectedProduct);
     const { user } = useAuth();
+
     const initialInfo = { name: user.displayName, email: user.email }
     const [info, setInfo] = useState(initialInfo);
+
     const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -32,9 +34,7 @@ const ParcheseModal = () => {
             name,
             price
 
-
         }
-
 
         // send to the server
         fetch('https://sleepy-reaches-16284.herokuapp.com/parchase', {

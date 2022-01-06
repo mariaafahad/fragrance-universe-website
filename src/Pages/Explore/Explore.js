@@ -8,7 +8,7 @@ const Explore = ({ products }) => {
 
     return (
         <>
-            <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 border-4 border-light-blue-500 border-opacity-25 shadow-lg hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer" >
+            <div className="my-1 px-1 w-96 h-96 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 border-4 border-light-blue-500 border-opacity-25 shadow-lg hover:shadow-xl hover:scale-105 duration-500 transform transition cursor-pointer" >
                 <img alt="Placeholder" class="block h-auto w-full" src={img}></img>
                 <h1>Name:{name}</h1>
                 <h3>Origin:{origin}</h3>
